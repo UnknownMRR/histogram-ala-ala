@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>Tes Histogram</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+        box-sizing: border-box;
+      }
+
+      .container{
+        width: 50%;
+        height: 253px;
+        padding: 30px;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+
+      .background{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-self: center;
+        position: absolute;
+      }
+
+      .sumbu{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+        left: 37px;
+        top: 37;
+      }
+      
+      ul{
+        list-style-type: none;
+      }
+
+      ul li{
+        margin-top: 30px;
+      }
+
+      ul li label{
+        text-align: left;
+      }
+
+      ul li .line{
+        float: right;
+        width: 95%;
+        height: 2px;
+        background: #ccc;
+        margin-top: 8px;
+      }
+
+      .content{
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 50px;
+        text-align: center;
+      }
+
+
+      .content ul{
+        list-style-type: none;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .content ul li{
+        display: inline-block;
+        margin-left: 30px;
+      }
+
+      .content ul li label{
+        font-style: italic;
+      }
+
+      .content ul li .dg{
+        width: 30px;
+        background: lime;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <div class="sumbu"></div>
+        <ul>
+          <li>
+            <label for="">40</label>
+            <div class="line"></div>
+          </li>
+          <li>
+            <label for="">30</label>
+            <div class="line"></div>
+          </li>
+          <li>
+            <label for="">20</label>
+            <div class="line"></div>
+          </li>
+          <li>
+            <label for="">10</label>
+            <div class="line"></div>
+          </li>
+        </ul>
+        <div class="content">
+          <ul>
+            <li>
+              <div class="dg" id="senin"></div>
+              <label for="">Senin</label>
+            </li>
+            <li>
+              <div class="dg" id="selasa"></div>
+              <label for="">Selasa</label>
+            </li>
+            <li>
+              <div class="dg" id="rabu"></div>
+              <label for="">Rabu</label>
+            </li>
+            <li>
+              <div class="dg" id="kamis"></div>
+              <label for="">Kamis</label>
+            </li>
+            <li>
+              <div class="dg" id="jumat"></div>
+              <label for="">Jumat</label>
+            </li>
+            <li>
+              <div class="dg" id="sabtu"></div>
+              <label for="">Sabtu</label>
+            </li>
+            <li>
+              <div class="dg" id="minggu"></div>
+              <label for="">Minggu</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      let senin = document.getElementById("senin");
+      let selasa = document.getElementById("selasa");
+      let rabu = document.getElementById("rabu");
+      let kamis = document.getElementById("kamis");
+      let jumat = document.getElementById("jumat");
+        let sabtu = document.getElementById("sabtu");
+      let minggu = document.getElementById("minggu");
+
+      senin.style.paddingTop = '175px';
+      selasa.style.paddingTop = '100px';
+      rabu.style.paddingTop = '125px';
+      kamis.style.paddingTop = '150px';
+      jumat.style.paddingTop = '100px';
+      sabtu.style.paddingTop = '200px';
+      minggu.style.paddingTop = '200px';
+
+    </script>
+  </body>
+</html>
